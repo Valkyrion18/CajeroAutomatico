@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"
+      rel="stylesheet"
+    />
+    <title>CAJERO VIRTUAL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <!--<body style="display: block"> -->
+  <body style="display: none">
+    <div class="header">
+      <img class="logo" src="./img/logo.png" />
+      <div class="align-left">
+        <span id="nombre">Bienvenido/a</span>
+        <img class="avatar" src="./img/avatar.svg" />
+      </div>
+    </div>
+    <div class="white-container">
+      <div class="menu-container">
+        <h1 class="tu-cuenta">Tu cuenta</h1>
+        <button class="links" onclick="extraerDineroBancario()">Extraer dinero</button>
+        <button class="links" onclick="depositarDinero()">Depositar dinero</button>
+        <button class="links" onclick="">Pagar servicios</button>
+        <button class="links" onclick="">
+          Transferir dinero
+        </button>
+        <button class="links" onclick="">
+          Cambiar límite de extracción
+        </button>
+      </div>
+      <div class="green-container">
+        <div class="cuenta-info">
+          <p>Saldo en tu cuenta</p>
+          <h3 id="saldo-cuenta">$</h3>
+          <p id="limite-extraccion">Tu límite de extracción en el cajero es: </p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>
